@@ -22,6 +22,15 @@ interface Config {
   zap: string;
   zapTokenManager: string;
   treasurySwapper: string;
+  clmFactory: string;
+  clmStrategyFactory: string;
+  clmRewardPoolFactory: string;
+  beefySwapper: string;
+  beefyOracle: string;
+  beefyOracleChainlink: string;
+  beefyOracleChainlinkEthBase: string;
+  beefyOracleUniswapV3: string;
+  beefyOracleSolidly: string;
 }
 
 export const initConfigService = () => {
@@ -48,6 +57,15 @@ export const initConfigService = () => {
       zap: config.zap,
       zapTokenManager: config.zapTokenManager,
       treasurySwapper: config.treasurySwapper,
+      clmFactory: config.clmFactory,
+      clmStrategyFactory: config.clmStrategyFactory,
+      clmRewardPoolFactory: config.clmRewardPoolFactory,
+      beefySwapper: config.beefySwapper,
+      beefyOracle: config.beefyOracle,
+      beefyOracleChainlink: config.beefyOracleChainlink,
+      beefyOracleChainlinkEthBase: config.beefyOracleChainlinkEthBase,
+      beefyOracleUniswapV3: config.beefyOracleUniswapV3,
+      beefyOracleSolidly: config.beefyOracleSolidly,
     };
   });
 
